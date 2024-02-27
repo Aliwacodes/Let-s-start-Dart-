@@ -1,17 +1,43 @@
+//add two
+int addTwo(int num1, int num2) {
+  return num1 + num2;
+}
+
+//subtract two
+int subtractTwo(int num1, int num2) {
+  return num1 - num2;
+}
+
+//multiply two
+double multiplyTwo(double num1, double num2) {
+  return num1 * num2;
+}
+
+//divide two
+double divideTwo(double num1, double num2) {
+  return num1 / num2;
+}
+
+//stringlength
+int stringLength(String str) {
+  return str.length;
+}
+
+//getFirstElement
+T getFirstElement<T>(List<T> list) {
+  return list[0];
+}
+
 void main() {
-  //integer to show number
-  int age = 22;
-  print("Gabriella is $age years old.");
-  //double to show decimal points
-  double days = 365.25;
-  print("The year 2024 has $days days");
-  //string to show text
-  String name = "Gabriella";
-  print("My name is $name");
-  //List shows a collection of data that is ordered
-  List countries = ["Kenya", "Uganda", "Tanzania"];
-  print("The countries in East Africa are $countries");
-  //map to store key value pairs
-  Map fruits = {"apple": "red", "banana": "yellow"};
-  print("The color of a banana is ${fruits["banana"]}.");
+  // Testing the functions
+  print(addTwo(5, 3));
+  print(subtractTwo(10, 4));
+  print(multiplyTwo(2.5, 5));
+  print(divideTwo(10, 2));
+
+  String myName = "Gabriella";
+  print(stringLength(myName));
+
+  List<int> numbers = [1, 2, 3, 4];
+  print(getFirstElement(numbers));
 }
